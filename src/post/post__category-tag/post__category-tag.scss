@@ -1,0 +1,14 @@
+$tag-btn-color: rgba(255, 65, 65, 1);
+$tag-btn-text-color: #fff;
+
+.post__category-tag {
+    padding: 14px 47px 11px 38px;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: $tag-btn-color;
+
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: $tag-btn-text-color;
+}

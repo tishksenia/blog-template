@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 html(lang="en")
+    // - includes
+    include slider/slider.pug
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet" href="css/main.css")
+        // Slick CSS
+        link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css')
+
         title Blog Template
     body.page
         .page__main-nav.main-nav
@@ -24,5 +29,63 @@ html(lang="en")
                 a.nav-link.main-nav__nav__nav-link(href="#") Register
                 a.nav-link.main-nav__nav__nav-link(href="#") Search
                 a.nav-link.main-nav__nav__nav-link(href="#") En
+
+        //- post template
+        //- {
+        //-     title: "",
+        //-     category_tag: "",
+        //-     preview_url: "",
+        //-     user: "",
+        //-     date: "",
+        //-     comments: "",
+        //-     views: "",
+        //-     desc: ""
+        //- }
+        - 
+            var slider_posts = [
+                {
+                    title: "Certainty listening no behaviour existence assurance situation",
+                    category_tag: "Hi-Tech",
+                    preview_url: "https://images.unsplash.com/photo-1558859798-fc50246989cd",
+                    user: "admin",
+                    date: "jul/15/2018",
+                    comments: "01",
+                    views: "301",
+                    desc: "We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire"
+                },
+                {
+                    title: "Certainty listening no behaviour existence assurance situation",
+                    category_tag: "Hi-Tech",
+                    preview_url: "https://images.unsplash.com/photo-1500408698778-2afa347782f3",
+                    user: "admin",
+                    date: "jul/15/2018",
+                    comments: "01",
+                    views: "301",
+                    desc: "We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire"
+                },
+                {
+                    title: "Certainty listening no behaviour existence assurance situation",
+                    category_tag: "Hi-Tech",
+                    preview_url: "https://images.unsplash.com/photo-1500408698778-2afa347782f3",
+                    user: "admin",
+                    date: "jul/15/2018",
+                    comments: "01",
+                    views: "301",
+                    desc: "We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire"
+                }
+            ];
+        //- structure:
+        //- .slider.page__slider
+                .slider__slider-view.post.slider__post
+        +slider(slider_posts)
+
+        // 3rd party scripts
+        // JQuery 
+        script(type='text/javascript', src='https://code.jquery.com/jquery-1.11.0.min.js')
+        script(type='text/javascript', src='https://code.jquery.com/jquery-migrate-1.2.1.min.js')
+        // Slick JS        
+        script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js')
+        // Custom scripts
+        script(type='text/javascript', src='js/app.js')
         
     
