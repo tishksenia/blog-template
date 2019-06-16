@@ -1,0 +1,6 @@
+$active-color: rgba(255, 65, 65, 1);
+
+.nav-link_active {
+    color: $active-color;
+    border-top: 6px solid $active-color;
+}

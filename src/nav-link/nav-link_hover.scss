@@ -1,0 +1,7 @@
+$hover-color: rgba(255, 65, 65, 1);
+
+.nav-link_hover,
+.nav-link:hover {
+    color: $hover-color;
+    transition-duration: 0.7s;
+}

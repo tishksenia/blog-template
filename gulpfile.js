@@ -9,7 +9,7 @@ const jshint = require('gulp-jshint');
 //yarn add gulp gulp-sass gulp-pug gulp-concat gulp-livereload gulp-uglify jshint gulp-jshint
 
 function css() {
-  return src('src/**/*.scss')
+  return src('src/*.scss')
   .pipe(sass())
   .pipe(dest('public/css'))
   .pipe(livereload())

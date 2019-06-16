@@ -1,0 +1,11 @@
+@import '../nav-link/nav-link';
+
+.main-nav {}
+
+.page__main-nav {
+    height: 82px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+}
