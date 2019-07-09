@@ -22,5 +22,6 @@ $margin-between-dots: 0.2rem;
 
 .page__dots {
     position: relative;
-    transform: translateX(50%) translateY(-1.7rem);
+    transform: translateY(-1.7rem);
+    margin-left: 50%;
 }

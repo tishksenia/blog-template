@@ -1,8 +1,14 @@
 $post-data-color: rgba(241, 241, 241, 1);
 
 .post__data {
-    font-size: 25px;
+    font-size: 1.563rem;
     font-family: 'Roboto', sans-serif;
     color: $post-data-color;
     z-index: 1;
+}
+
+@media screen and (max-width: 320px) {
+    .post__data {
+        font-size: 1rem;
+    }
 }

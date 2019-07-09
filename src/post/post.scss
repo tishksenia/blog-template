@@ -19,5 +19,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+@media screen and (max-width: 1000px) {
+    .slider__post {
+        width: 80%;
+        margin: 0 auto;
+    }
 }

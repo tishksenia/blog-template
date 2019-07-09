@@ -8,8 +8,14 @@ $tag-btn-text-color: #fff;
     border-radius: 6px;
     background-color: $tag-btn-color;
 
-    font-size: 25px;
+    font-size: 1.563rem;
     font-family: 'Roboto', sans-serif;
     color: $tag-btn-text-color;
     z-index: 1;
+}
+
+@media screen and (max-width: 320px) {
+    .post__category-tag {
+        font-size: 1rem;
+    }
 }
