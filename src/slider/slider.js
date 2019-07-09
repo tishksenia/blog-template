@@ -1,5 +1,7 @@
 $(document).ready(function(){
     $('.slider').slick({
-        arrows: true
+        arrows: false,
+        dots: true,
+        appendDots: '.page__dots'
     });
 });

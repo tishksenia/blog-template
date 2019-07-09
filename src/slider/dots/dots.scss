@@ -1,0 +1,26 @@
+$dots-background-color: rgba(255, 65, 65, 1);
+$size-of-dot: 0.8rem;
+$margin-between-dots: 0.2rem;
+
+.dots {
+    button {
+        background-color: $dots-background-color;
+        border: 0;
+        border-radius: 50%;
+        text-indent: -9000px;
+        width: $size-of-dot;
+        height: $size-of-dot;
+        outline: none;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-right: $margin-between-dots;
+    }
+
+}
+
+.page__dots {
+    position: relative;
+    transform: translateX(50%) translateY(-1.7rem);
+}

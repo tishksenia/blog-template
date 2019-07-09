@@ -1,0 +1,23 @@
+@import 'post__category-tag/post__category-tag';
+@import 'post__title/post__title';
+@import 'post__data/post__data';
+@import 'post__data-chunk/post__data-chunk';
+
+.post {
+    z-index: 99;
+}
+
+.slider__post {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+
+    margin-left: 10%;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

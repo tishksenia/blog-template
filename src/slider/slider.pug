@@ -4,3 +4,4 @@ mixin slider(posts)
     .slider.page__slider
         each post in posts
             +slider__slider-view(post.preview_url, post.title, post.category_tag, post.user, post.date, post.comments, post.views)
+    .page__dots.dots
