@@ -15,23 +15,23 @@ html(lang="en")
 
         title Blog Template
     body.page
-        .page__main-nav.main-nav
+        header.page__main-nav.main-nav
             a(href="#")
                 img.logo(src="../src/media/logo.svg" alt="Blog logotype")
             .main-nav__nav
-                a.nav-link.main-nav__nav__nav-link.nav-link_active(href="#") Home
-                a.nav-link.main-nav__nav__nav-link(href="#") Life Style
-                a.nav-link.main-nav__nav__nav-link(href="#") Travel
-                a.nav-link.main-nav__nav__nav-link(href="#") Fashion
-                a.nav-link.main-nav__nav__nav-link(href="#") Gallery
-                a.nav-link.main-nav__nav__nav-link(href="#") Contact
-                a.nav-link.main-nav__nav__nav-link(href="#") ...
+                a.nav-link.main-nav__nav-link.nav-link_active(href="#") Home
+                a.nav-link.main-nav__nav-link(href="#") Life Style
+                a.nav-link.main-nav__nav-link(href="#") Travel
+                a.nav-link.main-nav__nav-link(href="#") Fashion
+                a.nav-link.main-nav__nav-link(href="#") Gallery
+                a.nav-link.main-nav__nav-link(href="#") Contact
+                a.nav-link.main-nav__nav-link(href="#") ...
 
             .main-nav__controls
-                a.nav-link.main-nav__nav__nav-link(href="#") Login
-                a.nav-link.main-nav__nav__nav-link(href="#") Register
-                a.nav-link.main-nav__nav__nav-link(href="#") Search
-                a.nav-link.main-nav__nav__nav-link(href="#") En
+                a.nav-link.main-nav__nav-link(href="#") Login
+                a.nav-link.main-nav__nav-link(href="#") Register
+                a.nav-link.main-nav__nav-link(href="#") Search
+                a.nav-link.main-nav__nav-link(href="#") En
 
         //- post template
         //- {
@@ -81,7 +81,9 @@ html(lang="en")
         //- .slider.page__slider
                 .slider__slider-view.post.slider__post
         +slider(slider_posts)
-        +posts(slider_posts)
+        section.container.page__container
+            section.blog-feed.container__blog-feed
+                +posts(slider_posts)
         // 3rd party scripts
         // JQuery 
         script(type='text/javascript', src='https://code.jquery.com/jquery-1.11.0.min.js')

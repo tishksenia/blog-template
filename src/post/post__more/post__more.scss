@@ -1,0 +1,29 @@
+$more-link-color: rgba(255, 65, 65, 1);
+
+.post__more {
+    &:after {
+        font-family: 'Roboto', sans-serif;
+        color: rgba(255, 65, 65, 1);
+        content: '>';
+        padding-left: 0.5rem;
+        text-decoration: none;
+    }
+}
+
+.post__more .link {
+    color: $more-link-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -0.01rem;
+
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.page__post .post__more {
+    float: right;
+    margin-top: 2.125rem;
+    margin-bottom: 2rem;
+}

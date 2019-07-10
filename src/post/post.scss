@@ -3,6 +3,8 @@
 @import 'post__data/post__data';
 @import 'post__data-chunk/post__data-chunk';
 @import 'post__preview-img/post__preview-img';
+@import 'post__description/post__desrciption';
+@import 'post__more/post__more';
 
 .post {
     z-index: 99;
@@ -29,14 +31,28 @@
     }
 }
 
-$space-between-elements: 1rem;
+$space-between-elements: 1.125rem;
+$space-between-elements-l: 1rem;
 
-.slide__post-element {
+.page__post .post__element {
+    max-width: 90%;
+    margin: 0 auto;
     margin-top: $space-between-elements;
 
     &:first-child {
         margin-top: 0;
     }
+}
+
+.post__element {}
+
+.post_size_l .post__element {
+    margin-top: $space-between-elements-l;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
 }
 
 $post-default-text-color: rgba(77, 79, 92, 1);

@@ -1,0 +1,10 @@
+$container-bg-color: rgba(248, 248, 248, 1);
+
+.container {
+    background-color: $container-bg-color;
+}
+
+.page__container {
+    width: 70%;
+    margin: 0 auto;
+}

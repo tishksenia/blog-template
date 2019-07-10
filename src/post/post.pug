@@ -1,10 +1,10 @@
-mixin post(size, url, title, tag, user, date, comment_count, views, preview_url)
+mixin post(size, title, tag, user, date, comment_count, views, preview_url, desc)
     //- huge post preview on a slider
     if size === 'l'
         article.slider__post.post.post_size_l
-            button.post__category-tag.slide__post-element= tag
-            h2.post__title.slide__post-element= title
-            .post__data.slide__post-element
+            button.post__category-tag.post__element= tag
+            h2.post__title.post__element= title
+            .post__data.post__element
                 span.post__data-chunk= user
                 span.post__data-chunk= date
                 span.post__data-chunk= comment_count
@@ -17,14 +17,17 @@ mixin post(size, url, title, tag, user, date, comment_count, views, preview_url)
     else
         article.post.page__post
             img.post__preview-img(src=preview_url, alt=title)
-            button.post__category-tag= tag
-            h2.post__title= title
-            .post__data
-                span= user
-                span= date
-                span= comment_count
-                span= views
+            button.post__category-tag.post__element= tag
+            h2.post__title.post__element= title
+            .post__data.post__element
+                span.post__data-chunk= user
+                span.post__data-chunk= date
+                span.post__data-chunk= comment_count
+                span.post__data-chunk= views
+            p.post__description.post__element= desc
+            .post__more
+                a.link(href="#") Read More
     
 mixin posts(posts, size)
     each post in posts
-            +post(size, post.preview_url, post.title, post.category_tag, post.user, post.date, post.comments, post.views, post.preview_url)
+            +post(size, post.title, post.category_tag, post.user, post.date, post.comments, post.views, post.preview_url, post.desc)

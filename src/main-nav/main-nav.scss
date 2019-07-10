@@ -1,9 +1,9 @@
 @import '../nav-link/nav-link';
 
-.main-nav {}
+$nav-height: 5.125rem;
 
 .page__main-nav {
-    height: 82px;
+    height: $nav-height;
     width: 100%;
     display: flex;
     justify-content: space-around;

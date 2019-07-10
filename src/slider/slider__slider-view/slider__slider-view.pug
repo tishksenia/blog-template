@@ -1,4 +1,3 @@
-
-mixin slider__slider-view(url, title, tag, user, date, comment_count, views)
+mixin slider__slider-view(title, tag, user, date, comment_count, views, url)
     .slider__slider-view(style="background-image: url(" + url  + ")")
-        +post('l', url, title, tag, user, date, comment_count, views)
+        +post('l', title, tag, user, date, comment_count, views, url)
