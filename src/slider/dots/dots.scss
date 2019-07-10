@@ -16,6 +16,10 @@ $margin-between-dots: 0.2rem;
     ul li {
         display: inline-block;
         margin-right: $margin-between-dots;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
 
 }
@@ -23,5 +27,5 @@ $margin-between-dots: 0.2rem;
 .page__dots {
     position: relative;
     transform: translateY(-1.7rem);
-    margin-left: 50%;
+    margin-left: 48%;
 }

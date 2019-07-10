@@ -1,11 +1,4 @@
+
 mixin slider__slider-view(url, title, tag, user, date, comment_count, views)
     .slider__slider-view(style="background-image: url(" + url  + ")")
-        
-        .slider__post.post
-            button.post__category-tag= tag
-            h2.post__title= title
-            .post__data
-                span.post__data-chunk= user
-                span.post__data-chunk= date
-                span.post__data-chunk= comment_count
-                span.post__data-chunk= views
+        +post('l', url, title, tag, user, date, comment_count, views)

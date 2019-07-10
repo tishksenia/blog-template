@@ -1,9 +1,16 @@
-$post-data-color: rgba(241, 241, 241, 1);
+$post-data-color-l: rgba(241, 241, 241, 1);
+$post-data-color: rgba(77, 79, 92, 1);
 
 .post__data {
-    font-size: 1.563rem;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+
     color: $post-data-color;
+}
+
+.post_size_l .post__data {
+    font-size: 1.563rem;
+    color: $post-data-color-l;
     z-index: 1;
 }
 

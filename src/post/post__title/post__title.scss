@@ -1,11 +1,17 @@
-$title-text-color: #fff;
+$title-text-color-lg: #fff;
+$title-text-color: rgba(77, 79, 92, 1);
 
 .post__title {
-    font-size: 2.688rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    line-height: 3.563rem;
     color: $title-text-color;
+    font-size: 1.750rem;
+}
+
+.post_size_l .post__title {
+    color: $title-text-color-lg;
+    font-size: 2.688rem;
+    line-height: 3.563rem;
     z-index: 1;
 }
 

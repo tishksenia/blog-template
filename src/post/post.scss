@@ -2,6 +2,7 @@
 @import 'post__title/post__title';
 @import 'post__data/post__data';
 @import 'post__data-chunk/post__data-chunk';
+@import 'post__preview-img/post__preview-img';
 
 .post {
     z-index: 99;
@@ -26,4 +27,20 @@
         width: 80%;
         margin: 0 auto;
     }
+}
+
+$space-between-elements: 1rem;
+
+.slide__post-element {
+    margin-top: $space-between-elements;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+$post-default-text-color: rgba(77, 79, 92, 1);
+
+.page__post {
+    text-align: center;
 }

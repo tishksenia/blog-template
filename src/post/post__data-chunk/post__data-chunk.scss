@@ -1,5 +1,8 @@
-$space-between-chunks: 0.8rem;
+//common selector for all data entries
+$space-between-chunks-l: 0.8rem;
 
-.post__data-chunk {
-    margin-right: $space-between-chunks;
+.post__data-chunk {}
+
+.post_size_l .post__data-chunk {
+    margin-right: $space-between-chunks-l;
 }
