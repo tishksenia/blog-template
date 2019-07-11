@@ -32,6 +32,11 @@ function js() {
   .pipe(livereload())
 }
 
+function media() {
+  return src('src/media/**.*')
+  .pipe(dest('public/media/'))
+}
+
 function watch_css() {
     livereload.listen();
     return watch('src/**/*.scss', series('css'));
@@ -47,5 +52,5 @@ function watch_js() {
 exports.css = css;
 exports.html = html;
 exports.js = js;
-exports.default = parallel(html, css, js);
+exports.default = parallel(html, css, js, media);
 exports.watch = parallel(watch_css, watch_html, watch_js);
