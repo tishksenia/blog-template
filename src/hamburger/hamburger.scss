@@ -1,0 +1,16 @@
+@import 'hamburger__part/hamburger__part';
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .hamburger {
+        display: flex;
+    }
+}
+
+.main-nav__hamburger {
+    height: 100%;
+    max-width: 200px;
+}

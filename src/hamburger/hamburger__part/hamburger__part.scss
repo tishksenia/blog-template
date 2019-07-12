@@ -1,0 +1,9 @@
+$hamburger-part-color: rgba(255, 65, 65, 1);
+
+.hamburger__part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 8px;
+    background-color: $hamburger-part-color;
+}

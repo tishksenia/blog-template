@@ -4,8 +4,26 @@ $nav-height: 5.125rem;
 
 .page__main-nav {
     height: $nav-height;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-content: flex-end;
+}
+
+@media screen and (max-width: 1600px) {
+    .page__main-nav {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 1170px) {
+
+    .main-nav__nav,
+    .main-nav__controls {
+        visibility: hidden;
+    }
 }
